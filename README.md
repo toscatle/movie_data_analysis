@@ -1,25 +1,20 @@
-# movie_data_analysis
-Phase 1 Project - analyzing movie data for recommendations
+# Movie Data Analysis for Microsoft Recommendations
+Author: Tosca Le
 
 
 ## Overview
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+This project explores different types of films in order to identify actionable recommendations for Microsoft's new movie studio. Descriptive analysis of which films perform the best at the box office shows that movie ratings can vary depending on the genre and runtime. In addition, some genres tend to have higher grossing films than others. Microsoft can use this analysis to aid their decision in prioritizing which types of films to produce.
+***
 
 ## Business Problem
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
-
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
+Like many other companies creating original video content, Microsoft may be able to utilize current success metrics to appropriately allocate their resources and produce films that will perform well. By doing so, Microsoft can become a household name studio that has films enjoyed by many. By using datasets from some of the most popular film review websites, such as IMDb, I describe the relationship between genres, ratings, and gross to anticipate what films will be successful. These metrics are important to consider because ratings can heavily dictate what viewers choose to watch and share to others. In addition, from a business perspective, having viewers leave high ratings and continue to buy your product will allow the business to grow and continuing producing high quality products.
 ***
 
 ## Data
 
-Describe the data being used for this project.
+IMDb and The Numbers are popular film review sites that have a pletora of datasets on not only ratings, but gross and other information related to the film. The IMDb titles dataset includes film titles from 2010 and titles projected in the future. It also includes additional information on runtime and genres. The IMDb ratings dataset includes average rating and number of votes for each film. The Numbers dataset also includes release date, but it has data on production budget, domestic and worldwide gross.
 
 ***
 Questions to consider:
@@ -31,7 +26,7 @@ Questions to consider:
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+This project uses descriptive analysis, including trends based on categories of the data. This provides an overview of rating based on genres, runtimes and how this factors into gross.
 
 ***
 Questions to consider:
@@ -41,7 +36,8 @@ Questions to consider:
 
 ## Results
 
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
+News, Documentaries, and Biography genres have higher rated movies.
+
 
 ***
 Questions to consider:
