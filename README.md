@@ -1,6 +1,8 @@
 # Movie Data Analysis for Microsoft Recommendations
 Author: Tosca Le
 
+![movie theater](./images/movie theater.png)
+
 
 ## Overview
 
