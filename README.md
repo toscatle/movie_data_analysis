@@ -6,77 +6,80 @@ Author: Tosca Le
 
 ## Overview
 
-This project explores different types of films in order to identify actionable recommendations for Microsoft's new movie studio. Descriptive analysis of which films perform the best at the box office shows that movie ratings can vary depending on the genre and runtime. In addition, some genres tend to have higher grossing films than others. Microsoft can use this analysis to aid their decision in prioritizing which types of films to produce.
+This project explores different types of films in order to identify actionable recommendations for Microsoft's new movie studio. Descriptive analysis of which films perform the best at the box office shows that film ratings can vary depending on the genre and runtime. In addition, some genres tend to have a greater return on investment when compared to others. Microsoft can use this analysis to aid their decision in prioritizing what types of films to produce.
 ***
 
 ## Business Problem
 
-Like many other companies creating original video content, Microsoft may be able to utilize current success metrics to appropriately allocate their resources and produce films that will perform well. By doing so, Microsoft can become a household name studio that has films enjoyed by many. By using datasets from some of the most popular film review websites, such as IMDb, I describe the relationship between genres, ratings, and gross to anticipate what films will be successful. These metrics are important to consider because ratings can heavily dictate what viewers choose to watch and share to others. In addition, from a business perspective, having viewers leave high ratings and continue to buy your product will allow the business to grow and continuing producing high quality products.
+Like other companies creating original video content, Microsoft may be able to appropriately allocate their resources and produce movies that will perform well based on specific success metrics. By doing so, Microsoft can make decisions on what types of movies to create as the new movie studio grows. By using datasets from some of the most popular film review websites, such as IMDb, I describe the relationship between genres, ratings, and gross to anticipate what films will be successful.
 ***
 
 ## Data
 
-IMDb and The Numbers are popular film review sites that have a pletora of datasets on not only ratings, but gross and other information related to the film. The IMDb titles dataset includes film titles from 2010 and titles projected in the future. It also includes additional information on runtime and genres. The IMDb ratings dataset includes average rating and number of votes for each film. The Numbers dataset also includes release date, but it has data on production budget, domestic and worldwide gross.
+IMDb and The Numbers are popular movie review sites that have a plethora of datasets on not only ratings, but gross and other information related to the movie. 
+The IMDb basics dataset includes movie titles from 2010 to projected titles up until 2115, with additional information in runtime and genres. The IMDb ratings dataset includes average rating and number of votes for each movie. The Numbers dataset includes movie characteristics such as release date, production budget, domestic and worldwide gross.
 
 ***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
-***
+
 
 ## Methods
 
-This project uses descriptive analysis, including trends based on categories of the data. This provides an overview of rating based on genres, runtimes and how this factors into gross.
+This project uses descriptive analysis, including trends based on categories of the data. This provides an overview of rating based on genres, runtimes, gross and how this factors into return on investment.
+I prepared the data by checking for null values, changing specific datatypes, and transforming the dataframes to obtain unique genres or add necessary columns. Given the data and business problem, these steps were neccesary as not one dataset had all the characteristics and information needed for analysis. 
 
 ***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
-***
+
 
 ## Results
 
-News, Documentaries, and Biography genres have higher rated movies.
+News, Documentaries, and Biography genres have higher rated movies. Although, one thing to keep in mind is that these genres don't have as many movies as other genres such as Comedy, Drama, and Thriller.
 
+![graph1](./images/moviesPerGenre.png)
+
+![graph2](./images/ratingsPerGenre.png)
+
+The average runtime for movies is about 100 minutes. On the opposite ends of the range, movies that are less than 30 minutes and over 150 minutes have higher ratings. Again, another thing to consider are the genres and number of movies within each genre. Although there may be fewer movies in genres such as Documentary, there might be a greater likelihood for high reviews. The audience might be more atuned to these genres. Movies above the average 100 minutes, have higher ratings than movies that are shorter.
+
+![graph3](./images/ratingByRuntime.png)
+
+Horror, Mystery, and Thriller have the greatest average return on investment. On the other hand, Reality-TV, War, and Western movies had an overall loss.
+
+![graph4](./images/roiPerGenre.png)
 
 ***
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
-***
 
-Here is an example of how to embed images from your sub-folder:
-
-### Visual 1
-![graph1](./images/viz1.png)
 
 ## Conclusions
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+This analysis leads to three recommendations for Microsoft to consider as they begin to develop films under their new movie studio:
 
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
+* In terms of average rating, movies in News, Documentaries and Biography have higher ratings compared to others. While these genres may not currently have as many films as other genres, it is likely that overall ratings will be high for these genres, potentially bringing in continued viewership and support for Microsoft's movie studio.
+* When considering the average runtime, movies longer than 120 minutes will have an overall higher rating than movies shorter than 100 minutes. Movies that are either very short or very long received higher ratings possibly due to the nature of these genres. Microsoft should consider these runtimes when producing specific genres.
+* Microsoft can leverage movies in genres such as Horror, Mystery and Thriller to make a greater return on the initial production budget. Reality-TV, War and Western movies should be reconsidered when deciding budget since these genres had an overall loss.
+
+### Next Steps
+
+Further analyses could lead to additional and more specific insights to produce movies that will perform best:
+
+* Additional data on the demographics of the audience would be helpful to explore why certain genres are more popular when the number of movies vary greatly from genre to genre. This could help better predict ratings and the correlation to runtime as well.
+* A better prediction of domestic versus worldwide gross and could predict the success of certain movies based on different markets. Additionally, differentiation between sales (e.g. box office sales vs. streaming sites) could predict what types of movies are more successful during its inital release or over a period of time.
 ***
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review my full analysis in my [Jupyter Notebook](./movie_data_analysis.ipynb) or [presentation](./movie_data_analysis_presentation.pdf).
 
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact me at **toscatle@gmail.com**.
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
+
 
 ```
-├── README.md                           
-├── dsc-phase1-project-template.ipynb   
-├── DS_Project_Presentation.pdf         
-├── data                                
-└── images                              
+├── images
+├── .gitignore
+├── LICENSE                          
+├── README.md 
+├── movie_data_analysis.ipynb                                  
+└── movie_data_analysis_presentation.pdf                               
 ```
