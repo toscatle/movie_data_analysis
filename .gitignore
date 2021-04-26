@@ -5,6 +5,7 @@ __pycache__/
 
 # misc
 .DS_Store
+./zippedData/
 
 # C extensions
 *.so
